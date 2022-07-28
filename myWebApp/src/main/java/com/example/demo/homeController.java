@@ -11,6 +11,6 @@ public class homeController {
 	@RequestMapping("home")
 	public String func() {
 		System.out.println("hiii");
-		return "home.jsp";
+		return "home";
 	}
 }
