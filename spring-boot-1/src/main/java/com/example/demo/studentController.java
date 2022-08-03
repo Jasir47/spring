@@ -40,7 +40,8 @@ public class studentController {
 	
 	// handling request params using REST API 
 	@GetMapping("/student/query")
-	public student studentRP(@RequestParam(name = "firstName") String fN,
+	public student studentRP(
+			@RequestParam(name = "firstName") String fN,
 			@RequestParam(name = "lastName" ) String lN) {
 		return new student(fN,lN);
 	}
