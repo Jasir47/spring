@@ -20,7 +20,7 @@ public class SpringPostgresqlApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 	     String sql = "INSERT INTO datas (name,mail) VALUES ("
-	     		+ "'jasir' , 'jasir@mail' )" ;
+	     		+ "'jasir mk' , 'jasir.mk@mail' )" ;
 	     int rows = jdbcTemplate.update(sql);
 	     if (rows>0) {
 	    	 System.out.println("new row added");
